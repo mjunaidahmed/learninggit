@@ -1,4 +1,3 @@
-# learninggit
+# Readme file
 Learning GitHub and version control
-Step two in learning
-Branched *
+Test files and basic content
