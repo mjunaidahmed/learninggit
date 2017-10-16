@@ -1,83 +1,50 @@
-<?php
-/**
- * Magento
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@magento.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade Magento to newer
- * versions in the future. If you wish to customize Magento for your
- * needs please refer to http://www.magento.com for more information.
- *
- * @category    Mage
- * @package     Mage
- * @copyright  Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
- * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- */
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Terminal - Your Source for Fact-Based News</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 
-if (version_compare(phpversion(), '5.3.0', '<')===true) {
-    echo  '<div style="font:12px/1.35em arial, helvetica, sans-serif;">
-<div style="margin:0 0 25px 0; border-bottom:1px solid #ccc;">
-<h3 style="margin:0; font-size:1.7em; font-weight:normal; text-transform:none; text-align:left; color:#2f2f2f;">
-Whoops, it looks like you have an invalid PHP version.</h3></div><p>Magento supports PHP 5.3.0 or newer.
-<a href="http://www.magentocommerce.com/install" target="">Find out</a> how to install</a>
- Magento using PHP-CGI as a work-around.</p></div>';
-    exit;
-}
+  <nav class="navigation">
+    <ul>
+      <li>LOCAL</li>
+      <li>NATIONAL</li>
+      <li class="logo">THE TERMINAL</li>
+      <li>GLOBAL</li>
+      <li>OPED</li>
+      <li class="donate">DONATE</li>
+    </ul>
+  </nav>
 
-/**
- * Compilation includes configuration file
- */
-define('MAGENTO_ROOT', getcwd());
+  <div id="banner">
+    <div class="content">
+      <h1>Conservation Efforts at Lake Tahoe Being Praised by Nation's Leaders</h1>
+    </div>
+  </div>
 
-$compilerConfig = MAGENTO_ROOT . '/includes/config.php';
-if (file_exists($compilerConfig)) {
-    include $compilerConfig;
-}
+  <div id="main" class="content">
+    <h3>THE STATE'S LATEST CONSERVATION EFFORTS ARE BEING HERALDED BY NATION'S TOP LEADERS AS GROUNDBREAKING AND FORWARD THINKING.</h3>
+    <span class="byline">WRITTEN BY: JAMES JAYCE</span>
+    <p>Until recently, construction on the banks of the Lake had been largely under the control of real estate developers. Construction activities have resulted in a clouding of the lake's blue waters. Currently, the Tahoe Regional Planning Agency is regulating construction along the shoreline and has won two Federal Supreme Court battles over recent decisions. These regulations are unpopular with many residents, especially those in the Tahoe Lakefront Homeowners Association.</p>
 
-$mageFilename = MAGENTO_ROOT . '/app/Mage.php';
-$maintenanceFile = 'maintenance.flag';
+    <p>The League to Save Lake Tahoe (Keep Tahoe Blue) has been an environmental watchdog in the Lake Tahoe Basin for 50 years. Founded when a proposal to build a four-lane highway around the lake (with a bridge over the entrance to Emerald Bay) was proposed in 1957, the League has thwarted poorly designed development projects and environmentally unsound planning. The League embraces responsible and diversified use of the Lake's resources while protecting and restoring its natural attributes.</p>
 
-if (!file_exists($mageFilename)) {
-    if (is_dir('downloader')) {
-        header("Location: downloader");
-    } else {
-        echo $mageFilename." was not found";
-    }
-    exit;
-}
+    <div class="pull-quote">
+      <h2>"THE LEAGUE EMBRACES RESPONSIBLE AND DIVERSIFIED USE OF THE LAKE'S RESOURCES WHILE PROTECTING AND RESTORING ITS NATURAL ATTRIBUTES"</h2>
+    </div>
 
-if (file_exists($maintenanceFile)) {
-    include_once dirname(__FILE__) . '/errors/503.php';
-    exit;
-}
+    <p>Since 1980, the Lake Tahoe Interagency Monitoring Program (LTIMP) has been measuring stream discharge and concentrations of nutrients and sediment in up to 10 tributary streams in the Lake Tahoe Basin, California-Nevada. The objectives of the LTIMP are to acquire and disseminate the water quality information necessary to support science-based environmental planning and decision making in the basin. The LTIMP is a cooperative program with support from 12 federal and state agencies with interests in the Tahoe Basin. This data set, together with more recently acquired data on urban runoff water quality, is being used by the Lahontan Regional Water Quality Control Board to develop a program (mandated by the Clean Water Act) to limit the flux of nutrients and fine sediment to the Lake.</p>
 
-require MAGENTO_ROOT . '/app/bootstrap.php';
-require_once $mageFilename;
+    <p>UC Davis remains a primary steward of the lake. The UC Davis Tahoe Environmental Research Center is dedicated to research, education and public outreach, and to providing objective scientific information for restoration and sustainable use of the Lake Tahoe Basin. Each year, it produces a well-publicized "State of the Lake" assessment report.</p>
+  </div>
 
-#Varien_Profiler::enable();
+  <div class="share">
+    <a href="#">SHARE</a>
+    <a href="#">FAVORITE</a>
+    <a href="#">READ</a>
+  </div>
 
-if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
-    Mage::setIsDeveloperMode(true);
-}
-
-#ini_set('display_errors', 1);
-
-umask(0);
-
-/* Store or website code */
-$mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
-
-/* Run store or run website */
-$mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
-
-Mage::run($mageRunCode, $mageRunType);
+</body>
+</html>
