@@ -42,7 +42,7 @@
 
   <div class="share">
     <a href="#">SHARE</a>
-    <a href="#">FAVORITE</a>
+    <a href="#">FAVOcloneRITE</a>
     <a href="#">READ</a>
   </div>
 
