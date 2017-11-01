@@ -1,0 +1,94 @@
+/**
+ * @version		$Id$
+ * @author		JoomlaUX!
+ * @package		Joomla.Site
+ * @subpackage	mod_jux_megamenu
+ * @copyright	Copyright (C) 2008 - 2013 by JoomlaUX. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl.html GNU/GPL version 3
+*/
+
+#js-mainnav.megamenu.macstyle {
+	background: #ffffff url('../../images/grad1-mask.png') repeat-x top; /* you can change/delete the transparent gradient image or the background color */
+}
+
+
+#js-mainnav.megamenu.macstyle #js-megaMenuToggle {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+/* lv - 0
+-----------------------------------*/
+/* Styling ---*/
+
+#js-mainnav.megamenu.macstyle ul.level0 li.megacss span.megacss,
+#js-mainnav.megamenu.macstyle ul.level0 li.megacss a.megacss,
+#js-mainnav.megamenu.macstyle .megaMenuToggle {
+	padding: 10px 5px 12px 6px;
+	color: #ABA6A6;
+}
+
+#js-mainnav.megamenu.macstyle ul.level1 li:hover,
+#js-mainnav.megamenu.macstyle ul.level1 li.over, 
+#js-mainnav.megamenu.macstyle ul.level1 li.haschild-over { background: rgb(211, 134, 9); }
+
+#js-mainnav.megamenu.macstyle ul.level1 li.haschild,
+#js-mainnav.megamenu.macstyle ul.level1 li.haschild-over {
+	background-image: url(../../images/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+
+ /* CHILD CONTENT
+-----------------------------------*/
+#js-mainnav.megamenu.macstyle .childcontent-inner {
+	background-color: #f5f5f5; /*change here the color to match the new color you have set for mainnav */
+	color: #9B1200; /* after changing code above, you might want to change this color to make the text color readable  */ 
+	
+}
+
+#js-mainnav.megamenu.macstyle .childcontent-inner .group ul li.active {
+	background-color: #9B1200 !important;
+}
+
+#js-mainnav.megamenu.macstyle .childcontent .group h3 {
+	background: none;
+	color: #fff;
+}
+
+
+#js-mainnav.megamenu.macstyle .childcontent .moduletable { color: #fff; }
+
+#js-mainnav.megamenu.macstyle .childcontent .js-moduletable a:hover,
+#js-mainnav.megamenu.macstyle .childcontent .js-moduletable a:focus,
+#js-mainnav.megamenu.macstyle .childcontent .js-moduletable a:active {
+	color: #fff;
+}
+
+
+
+#js-mainnav.megamenu.macstyle .group-title .menu-title {
+	color: #7f7f7f;
+}
+
+#js-mainnav.megamenu.macstyle .group-title .menu-desc {
+	color: #999;
+}
+
+/* Left alignment */
+#js-mainnav.megamenu.macstyle ul.level0 li.megacss.submenu-align-left > .childcontent {
+	margin-left: 1px!important;
+}
+#megamenucss .macstyle.megamenu ul.level0 > li.megacss:hover > a.megacss,
+#megamenucss #js-mainnav.megamenu.macstyle ul.level0 li.active{
+    background: #545454 !important;
+    color: #ffffff!important;
+}
+#megamenucss .macstyle .megamenu .dropdown-menu ul.level1 li.megacss:hover>a.megacss,#megamenucss .macstyle .dropdown-menu ul.level1 li.megacss a.megacss:hover{
+    background: #1b6085!important;
+    color: #ffffff!important;
+}
+#megamenucss #js-mainnav.macstyle .js-megamenu{
+	background: #fff !important;
+}

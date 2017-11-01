@@ -476,7 +476,7 @@ body {
 }
 /* reset --- */
 #megamenucss #js-mainnav.megamenu .childcontent .moduletable {
-  padding: 10px;
+  padding: 5px;
 }
 #megamenucss #js-mainnav.megamenu ul.level0 .childcontent .moduletable li:hover,
 #megamenucss #js-mainnav.megamenu ul.level0 .childcontent .moduletable a:hover {
