@@ -1,2 +1,8 @@
-[01-Nov-2017 12:46:01 Europe/London] PHP Warning:  Module 'mysql' already loaded in Unknown on line 0
-[01-Nov-2017 12:46:01 Europe/London] PHP Warning:  Module 'mysqli' already loaded in Unknown on line 0
+[02-Nov-2017 16:50:48 Europe/London] PHP Warning:  Module 'mysql' already loaded in Unknown on line 0
+[02-Nov-2017 16:50:48 Europe/London] PHP Warning:  Module 'mysqli' already loaded in Unknown on line 0
+[02-Nov-2017 16:50:48 Europe/London] PHP Warning:  require_once(Mail.php): failed to open stream: No such file or directory in /home/macsolut/public_html/support/hooks/transcript.php on line 21
+[02-Nov-2017 16:50:48 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'Mail.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/macsolut/public_html/support/hooks/transcript.php on line 21
+[02-Nov-2017 16:56:11 Europe/London] PHP Warning:  Module 'mysql' already loaded in Unknown on line 0
+[02-Nov-2017 16:56:11 Europe/London] PHP Warning:  Module 'mysqli' already loaded in Unknown on line 0
+[02-Nov-2017 16:56:11 Europe/London] PHP Warning:  require_once(Mail.php): failed to open stream: No such file or directory in /home/macsolut/public_html/support/hooks/transcript.php on line 21
+[02-Nov-2017 16:56:11 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'Mail.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/macsolut/public_html/support/hooks/transcript.php on line 21
